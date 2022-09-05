@@ -26,3 +26,27 @@ table.remove( tbl, 5 ) ---this line was to remove the table in the table
 for i = 1, #tbl do
     print(tbl[i])
 end
+
+local tabl = {
+    {1,4,7},
+    {5,2,8},
+    {3,6,9},
+}
+--to print multi dimesnsional tables
+for i = 1 , #tabl do
+    for j = 1 , #tabl[i] do
+        print(tabl[i][j])
+    end
+end
+
+local mem = {2,5,7,2}
+-- print(table.concat( mem, " ", start_index, end_index ))
+print(table.concat( mem, " " )) --.concat joins the items in a list and make them a string
+
+-------------------------------------------Names table , just like a dictionary
+local human = {
+    name = 'alexis',
+    age = 18,
+    virgin = true
+}
+print(human['virgin'])
